@@ -14,7 +14,7 @@ header, footer {
     line-height: 130px;
     font-variant: small-caps;
     background: rgb(2,0,36);
-background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(23,23,75,0.8239670868347339) 43%, rgba(0,212,255,1) 100%);
+background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(97,97,166,0.8239670868347339) 43%, rgba(0,212,255,1) 100%);
 }
 
 footer {
@@ -73,17 +73,19 @@ main {
     text-align: center;
 }
 
-.intro-photo {
-    max-width: 150px;
-    max-height: 150px;
-    padding: 20px 10px;
+#profile-img {
     border-radius: 50%;
-    background-image: url(../images/profile.jpg);
-    background-size: cover;
-    height: 200px;
-    width: 200px;
-    margin: 10px auto;
+    height: 150px;
+    width: 150px;
     box-shadow: 2px 2px 5px 1px #1B98C3;
+}
+
+.intro-photo2 #profile-img {
+    box-shadow: 2px 2px 5px 1px #2BA977;
+}
+
+.intro-photo3 #profile-img {
+    box-shadow: 2px 2px 5px 1px #e0cb3d;
 }
 
 .intro-photo img {
@@ -130,6 +132,8 @@ main {
     padding: 10px;
     overflow: auto;
     line-height: 30px;
+    margin: auto;
+    text-align: justify;
 }
 
 .references {
@@ -218,9 +222,16 @@ h1, h3 {
     color: whitesmoke;
 }
 
-h1 {
+.header-title {
     font-size: 60px;
     box-shadow: 1px 0px 10px 1px cornflowerblue;
+    background-image: url(../images/background.jpg);
+    opacity: 0.9;
+}
+
+h1 a {
+    text-decoration: none;
+    color: white;
 }
 
 h3 {
@@ -253,3 +264,18 @@ footer a {
 /\/\/\/\/\/\/\/\/\/\    INTERACTION     /\/\/\/\/\/\/\/\/\/\
 */
 
+h1:hover {
+    transition: .5s;
+    text-shadow: 1px 1px 5px greenyellow;
+}
+
+h3:hover {
+    background-color: #2D6893;
+    transition: 1s;
+    box-shadow: 1px 1px 5pxpx black;
+}
+
+#python:hover {
+    height: 155px;
+    transition: .2s;
+}
