@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Display:wght@400;700&display=swap');
+
 * {
     margin: 0px;
     padding: 0px;
@@ -6,15 +9,22 @@
 
 header, footer {
     width: 100%;
-    height: 100px;
-    border: 1px solid black;
+    height: 130px;
     text-align: center;
-    line-height: 100px;
+    line-height: 130px;
     font-variant: small-caps;
+    background: rgb(2,0,36);
+background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(23,23,75,0.8239670868347339) 43%, rgba(0,212,255,1) 100%);
+}
+
+footer {
+    background: rgb(2,0,36);
+background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(23,23,75,0.8239670868347339) 43%, rgba(0,212,255,1) 100%);
+    box-shadow: 1px 1px 10px 1px cornflowerblue;
 }
 
 header {
-    margin-bottom: 5px;
+    margin-bottom: 15px;
 }
 
 main {
@@ -28,9 +38,8 @@ main {
 /\/\/\/\/\/\/\/\/\/\    NAV BAR     /\/\/\/\/\/\/\/\/\/\
 */
 .nav-box {
-    border: 1px solid green;
     display: flex;
-    width: 80%;
+    width: 50%;
     margin: 0px auto 20px;
     justify-content: space-around;
     height: 50px;
@@ -39,12 +48,13 @@ main {
 }
 
 .nav-box h3 {
-    border: 1px solid blue;
     height: 35px;
     width: 200px;
     text-align: center;
     margin-top: 5px;
     border-radius: 10px;
+    box-shadow: 1px 1px 5px 1px darkgrey;
+    background-color: #1B98C3;
 }
 
 .nav-box a {
@@ -58,7 +68,6 @@ main {
 .intro-cont {
     display: flex;
     flex-direction: column;
-    border: 1px solid orange;
     margin-bottom: 40px;
     min-width: 200px;
     text-align: center;
@@ -73,7 +82,8 @@ main {
     background-size: cover;
     height: 200px;
     width: 200px;
-    margin: auto;
+    margin: 10px auto;
+    box-shadow: 2px 2px 5px 1px #1B98C3;
 }
 
 .intro-photo img {
@@ -81,9 +91,12 @@ main {
 }
 
 .intro-detail {
-    border: 1px solid green;
     padding: 10px;
     overflow: auto;
+}
+
+.intro-detail P {
+    text-align: center;
 }
 
 /* 
@@ -91,32 +104,36 @@ main {
 */
 
 .top-title {
-    border: 1px solid black;
-    margin-bottom: 5px;
+    margin-bottom: 15px;
     text-align: center;
 }
 
 .top-5 {
-    border: 1px solid orange;
     display: flex;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
+    box-shadow: 1px 1px 10px 1px lightgrey;
+    border-radius: 10px;
+    margin-bottom: 50px;
 }
 
 .top-5 .top-container {
-    border: 1px solid pink;
     min-width: 200px;
     height: 200px;
     padding: 10px;
 }
 
+.top-container {
+    margin: auto;
+}
+
 .top-5 .top-description {
     padding: 10px;
     overflow: auto;
-    /* line-height: 10px; */
+    line-height: 30px;
 }
 
 .references {
-    margin-bottom: 30px;
+    margin: 40px 0px;
 }
 
 /* 
@@ -124,7 +141,7 @@ main {
 */
 
 .python-img, .java-img, .js-img, .csharp-img, .cplusplus-img, .php-img, .django-img, .spring-img, .angular-img, .aspnet-img, .laravel-img {
-    background-image: url(../images/python-icon.svg);
+    /* background-image: url(../images/python-icon.svg); */
     background-size: contain;
     background-repeat: no-repeat;
     height: 150px;
@@ -172,3 +189,67 @@ main {
 .laravel-img {
     background-image: url(../images/laravel-icon.svg);
 }
+
+/* 
+/\/\/\/\/\/\/\/\/\/\    TO COMPLETE: LINKEABLE IMAGES. PYTHON EXAMPLE     /\/\/\/\/\/\/\/\/\/\
+*/
+
+#python {
+    height: 150px;
+}
+
+/* 
+/\/\/\/\/\/\/\/\/\/\    TEXT STYLES     /\/\/\/\/\/\/\/\/\/\
+*/
+
+body {
+    font-family: 'Work Sans', sans-serif;
+}
+
+p {
+    text-align: justify;
+    padding: 0px 10px;
+}
+
+h1, h3 {
+    font-family: 'Big Shoulders Stencil Display', cursive;
+    font-size: 1.5em;
+    font-variant: small-caps;
+    color: whitesmoke;
+}
+
+h1 {
+    font-size: 60px;
+    box-shadow: 1px 0px 10px 1px cornflowerblue;
+}
+
+h3 {
+    text-shadow: 1px 1px 2px black;
+}
+
+h2 {
+    color: cornflowerblue;
+    text-shadow: 1px 1px 2.5px darkblue;
+    font-size: 2em;
+}
+
+footer {
+    color: whitesmoke;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+footer a {
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+.header-title {
+    text-shadow: 2px 2px 2px black;
+}
+
+
+/* 
+/\/\/\/\/\/\/\/\/\/\    INTERACTION     /\/\/\/\/\/\/\/\/\/\
+*/
+
