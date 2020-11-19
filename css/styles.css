@@ -10,6 +10,7 @@ header, footer {
     border: 1px solid black;
     text-align: center;
     line-height: 100px;
+    font-variant: small-caps;
 }
 
 header {
@@ -34,6 +35,7 @@ main {
     justify-content: space-around;
     height: 50px;
     line-height: 35px;
+    font-variant: small-caps;
 }
 
 .nav-box h3 {
@@ -55,22 +57,27 @@ main {
 
 .intro-cont {
     display: flex;
-    border: 1px solid red;
+    flex-direction: column;
+    border: 1px solid orange;
     margin-bottom: 40px;
+    min-width: 200px;
+    text-align: center;
 }
 
 .intro-photo {
-    border: 1px solid blue;
-    min-width: 200px;
+    max-width: 150px;
+    max-height: 150px;
+    padding: 20px 10px;
+    border-radius: 50%;
+    background-image: url(../images/profile.jpg);
+    background-size: cover;
     height: 200px;
-    padding: 10px;
+    width: 200px;
+    margin: auto;
 }
 
 .intro-photo img {
-    border: 1px solid yellow;
-    height: 150px;
-    border-radius: 50%;
-    line-height: 90px;
+    height: 200px;
 }
 
 .intro-detail {
@@ -78,6 +85,10 @@ main {
     padding: 10px;
     overflow: auto;
 }
+
+/* 
+/\/\/\/\/\/\/\/\/\/\    TOP 5 SECTION    /\/\/\/\/\/\/\/\/\/\
+*/
 
 .top-title {
     border: 1px solid black;
@@ -101,4 +112,41 @@ main {
 .top-5 .top-description {
     padding: 10px;
     overflow: auto;
+    /* line-height: 10px; */
+}
+
+.references {
+    margin-bottom: 30px;
+}
+
+/* 
+/\/\/\/\/\/\/\/\/\/\    INSERT IMAGES     /\/\/\/\/\/\/\/\/\/\
+*/
+
+.python-img, .java-img, .js-img, .csharp-img, .cplusplus-img, .php-img {
+    background-image: url(../images/python-icon.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 150px;
+    margin: 10px;
+}
+
+.java-img {
+    background-image: url(../images/java-icon.svg);
+}
+
+.js-img {
+    background-image: url(../images/javascript-icon.svg);
+}
+
+.csharp-img {
+    background-image: url(../images/csharp-icon.svg);
+}
+
+.php-img {
+    background-image: url(../images/php-icon.svg);
+}
+
+.cplusplus-img {
+    background-image: url(../images/cplusplus-icon.svg);
 }
