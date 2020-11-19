@@ -120,10 +120,10 @@ main {
 }
 
 /* 
-/\/\/\/\/\/\/\/\/\/\    INSERT IMAGES     /\/\/\/\/\/\/\/\/\/\
+/\/\/\/\/\/\/\/\/\/\    INSERT LOGOS     /\/\/\/\/\/\/\/\/\/\
 */
 
-.python-img, .java-img, .js-img, .csharp-img, .cplusplus-img, .php-img {
+.python-img, .java-img, .js-img, .csharp-img, .cplusplus-img, .php-img, .django-img, .spring-img, .angular-img, .aspnet-img, .laravel-img {
     background-image: url(../images/python-icon.svg);
     background-size: contain;
     background-repeat: no-repeat;
@@ -149,4 +149,26 @@ main {
 
 .cplusplus-img {
     background-image: url(../images/cplusplus-icon.svg);
+}
+
+.django-img {
+    background-image: url(../images/django-icon.svg);
+    height: 130px;
+    margin: 25px;
+}
+
+.spring-img {
+    background-image: url(../images/spring-icon.svg);
+}
+
+.angular-img {
+    background-image: url(../images/angular-icon.svg);
+}
+
+.aspnet-img {
+    background-image: url(../images/aspnet-icon.svg);
+}
+
+.laravel-img {
+    background-image: url(../images/laravel-icon.svg);
 }
