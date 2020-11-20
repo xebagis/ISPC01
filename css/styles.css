@@ -30,7 +30,7 @@ header {
 main {
     width: 80%;
     margin: auto;
-
+    min-height: 484px;
 }
 
 
@@ -77,6 +77,10 @@ main {
     border-radius: 50%;
     height: 150px;
     width: 150px;
+    
+}
+
+.intro-photo #profile-img {
     box-shadow: 2px 2px 5px 1px #1B98C3;
 }
 
@@ -86,6 +90,19 @@ main {
 
 .intro-photo3 #profile-img {
     box-shadow: 2px 2px 5px 1px #e0cb3d;
+}
+
+.email-photo {
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    margin: auto;
+    box-shadow: 2px 2px 5px 1px #1B98C3;
+}
+
+#email-img {
+    height: 70px;
+    margin-top: 25%
 }
 
 .intro-photo img {
@@ -100,6 +117,15 @@ main {
 .intro-detail P {
     text-align: center;
 }
+
+/* 
+/\/\/\/\/\/\/\/\/\/\    VOID SAVEGUARD    /\/\/\/\/\/\/\/\/\/\
+*/
+
+.void {
+    height: 150px;
+}
+
 
 /* 
 /\/\/\/\/\/\/\/\/\/\    TOP 5 SECTION    /\/\/\/\/\/\/\/\/\/\
@@ -247,7 +273,7 @@ h2 {
 footer {
     color: whitesmoke;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
 }
 
 footer a {
@@ -279,3 +305,89 @@ h3:hover {
     height: 155px;
     transition: .2s;
 }
+
+.form-button:hover {
+       background-position: right center; /* change the direction of the change here */
+       color: #fff;
+     }
+
+footer a:hover {
+    text-decoration: underline;
+    color: #00DF76;
+    transition: 1s;
+}
+
+/* 
+/\/\/\/\/\/\/\/\/\/\    TABLE     /\/\/\/\/\/\/\/\/\/\
+*/
+
+table {
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px 1px lightgrey;
+    margin: 0px auto 50px auto;
+}
+
+td {
+    border-bottom: 1px solid #E5E5E5;
+    padding: 25px;
+}
+
+.td-left {
+    width: 450px;
+    padding: 10px;
+}
+
+.td-right {
+    background-image: url(../images/check-icon.svg);
+    background-repeat: no-repeat;
+    background-size: 25px;
+    background-position: center;
+    height: 20px;
+}
+
+
+/* 
+/\/\/\/\/\/\/\/\/\/\    FORM     /\/\/\/\/\/\/\/\/\/\
+*/
+
+form {
+    margin: 0px auto 80px;
+    display: flex;
+    flex-direction: column;
+    /* margin: 0px auto 50px; */
+    width: 400px;
+    border-radius: 5px;
+    background-color: #2D6893;
+    box-shadow: 1px 1px 10px 1px #2D6893;
+    padding: 30px;
+}
+
+form input, form textarea {
+    border: none;
+    border-radius: 5px;
+    height: 30px;
+    width: 250px;
+    margin: 10px auto 0px auto;
+    text-align: center;
+    color: #00AB5E;
+}
+
+.form-button {
+    margin: 25px auto 25px;
+    width: 200px;
+    height: 20px;
+    cursor: pointer;
+    background-image: linear-gradient(to right, #00AB5E 0%, #00DF76  51%, #00AB5E  100%);
+    text-align: center;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px darkslategrey;
+ }
+
+ form textarea {
+    width: 340px;
+    height: 150px;
+    padding: 10px;
+ }
