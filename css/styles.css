@@ -301,6 +301,11 @@ h3:hover {
     box-shadow: 1px 1px 5pxpx black;
 }
 
+.intro-photo a img #profile-img {
+    background-color: red;
+    /* background-image: url(../images/coding-dog.jpg); */
+}
+
 #python:hover {
     height: 155px;
     transition: .2s;
@@ -391,3 +396,22 @@ form input, form textarea {
     height: 150px;
     padding: 10px;
  }
+
+
+/* 
+/\/\/\/\/\/\/\/\/\/\    MEDIA QUERY     /\/\/\/\/\/\/\/\/\/\
+*/
+
+
+ @media all and (max-width:600px) {
+    .nav-box {
+        flex-direction: column;
+        height: 130px;
+        align-items: center;
+    }
+ }
+
+ @media all and (max-width:720px) {
+     .top-5 {
+        flex-direction: column;
+}
