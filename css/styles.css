@@ -408,6 +408,10 @@ form input, form textarea {
  }
 
  @media all and (max-width:720px) {
-     .top-5 {
+    .top-5 {
         flex-direction: column;
-}
+    }
+    .void {
+        height: 50px;
+    }
+ }
