@@ -170,62 +170,30 @@ main {
 /\/\/\/\/\/\/\/\/\/\    INSERT LOGOS     /\/\/\/\/\/\/\/\/\/\
 */
 
-.python-img, .java-img, .js-img, .csharp-img, .cplusplus-img, .php-img, .django-img, .spring-img, .angular-img, .aspnet-img, .laravel-img {
-    /* background-image: url(../images/python-icon.svg); */
-    background-size: contain;
-    background-repeat: no-repeat;
+#python, #java, #javascript, #csharp, #php, #cplusplus, #spring, #angular, #aspnet, #laravel {
     height: 150px;
-    margin: 10px;
 }
 
-.java-img {
-    background-image: url(../images/java-icon.svg);
-}
-
-.js-img {
-    background-image: url(../images/javascript-icon.svg);
-}
-
-.csharp-img {
-    background-image: url(../images/csharp-icon.svg);
-}
-
-.php-img {
-    background-image: url(../images/php-icon.svg);
-}
-
-.cplusplus-img {
-    background-image: url(../images/cplusplus-icon.svg);
-}
-
-.django-img {
-    background-image: url(../images/django-icon.svg);
+#django {
     height: 130px;
     margin: 25px;
 }
 
-.spring-img {
-    background-image: url(../images/spring-icon.svg);
+#php {
+    margin: 20px;
 }
 
-.angular-img {
-    background-image: url(../images/angular-icon.svg);
+#laravel, #python {
+    margin: 15px;
 }
 
-.aspnet-img {
-    background-image: url(../images/aspnet-icon.svg);
+#javascript {
+    margin: 0px 15px 0px 5px;
+    height: 170px;
 }
 
-.laravel-img {
-    background-image: url(../images/laravel-icon.svg);
-}
-
-/* 
-/\/\/\/\/\/\/\/\/\/\    TO COMPLETE: LINKEABLE IMAGES. PYTHON EXAMPLE     /\/\/\/\/\/\/\/\/\/\
-*/
-
-#python {
-    height: 150px;
+#angular {
+    margin: 10px;
 }
 
 /* 
@@ -301,13 +269,18 @@ h3:hover {
     box-shadow: 1px 1px 5pxpx black;
 }
 
-.intro-photo a img #profile-img {
-    background-color: red;
-    /* background-image: url(../images/coding-dog.jpg); */
+#python:hover, #java:hover, #csharp:hover, #php:hover, #cplusplus:hover, #spring:hover, #angular:hover, #aspnet:hover, #laravel:hover {
+    height: 155px;
+    transition: .2s;
 }
 
-#python:hover {
-    height: 155px;
+#javascript:hover {
+    height: 175px;
+    transition: .2s;
+}
+
+#django:hover {
+    height: 135px;
     transition: .2s;
 }
 
@@ -401,6 +374,29 @@ form input, form textarea {
 /* 
 /\/\/\/\/\/\/\/\/\/\    MEDIA QUERY     /\/\/\/\/\/\/\/\/\/\
 */
+
+@media all and (max-width:500px) {
+    form {
+        width: 300px;
+        margin: 0px auto 50px auto ;
+    }
+    
+    form input {
+        width: 200px;
+    }
+
+    form  textarea {
+        width: 250px;
+    }
+
+    .form-button {
+        width: 100px;
+    }
+
+    p {
+        font-size: .8em;
+    }
+ }
 
 
  @media all and (max-width:600px) {
