@@ -142,6 +142,7 @@ main {
     box-shadow: 1px 1px 10px 1px lightgrey;
     border-radius: 10px;
     margin-bottom: 50px;
+    background-color: #fff;
 }
 
 .top-5 .top-container {
@@ -202,7 +203,11 @@ main {
 
 body {
     font-family: 'Work Sans', sans-serif;
+    background-image: radial-gradient(73% 147%, #EADFDF 59%, #ECE2DF 100%), radial-gradient(91% 146%, rgba(255,255,255,0.80) 47%, rgba(0,0,0,0.10) 100%);
+    background-blend-mode: screen;
+    /* elegance style modified */
 }
+
 
 p {
     text-align: justify;
@@ -242,6 +247,7 @@ footer {
     color: whitesmoke;
     display: flex;
     justify-content: space-around;
+    background-color: #fff;
 }
 
 footer a {
@@ -308,6 +314,7 @@ table {
 td {
     border-bottom: 1px solid #E5E5E5;
     padding: 25px;
+    background-color: #fff;
 }
 
 .td-left {
